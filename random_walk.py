@@ -20,7 +20,7 @@ def get_y(x):
     if x == 0:
         return 0
 
-    return (get_y(x-1) + math.exp(1))
+    return (abs(get_y(x-1)) + math.exp(1))
 
 while True:
     if step == 20:
